@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        </link>
+        <meta charset="UTF-8">
+        <title>Number of receipts</title>
+    </head>
+    <body>
+        <div class="hero-form">
+            <h class="head_name"> Number of receipts</h>
+            <form action="{{ url_for('predict') }}" id="big_form" method="POST">
+                <input name="input_months" type="text" id="input_months" class="form-control input-lg"
+                    placeholder="How many months? (try 6 or 12)"/>
+                <button type="submit" id="big_submit">Forecast!</button>
+            </form>
+        </div>
+        <div class="container" style="text-align: center;position: relative;">
+            {% if img_to_display_base64 is defined %}
+            <img src="data:image/png;base64,{{img_to_display_base64}}">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <th>Date</th>
+                    <th>Number of receipts</th>
+                </tr>
+                {% for key, item in table %}
+                <TR>
+                    <TD class="c1">{{key}}</TD>
+                    <TD class="c2">{{item}}</TD>
+                </TR>
+                {% endfor %}
+            </table>
+            {% elif placeholder_url is defined%}
+            <img src={{placeholder_url}}>
+            {% else %}
+            <img src="https://fetch.com/assets/images/graphics/footer-logo.svg">
+            {% endif %}
+        </div>
+    </body>
+</html>

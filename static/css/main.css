@@ -1,0 +1,42 @@
+body {
+  background: #141414;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #e5e5e5;
+  margin: 0;
+}
+
+.head_name {
+ font-size: 60px;
+ font-weight: 600;
+ text-shadow: none;
+}
+
+.hero-form {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+#input_months {
+    width: 35vw;
+    height: 44px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    padding-left: 20px;
+    outline-width: 0;
+}
+
+#big_submit {
+    height: 43px;
+    border-radius: 20px;
+    border: none;
+    text-shadow: 0 0 black;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline-width: 0;
+    margin:10px;
+    color: #646464;
+    background-color: #efefef;
+}
