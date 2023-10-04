@@ -1,4 +1,7 @@
-![Webp.net-resizeimage](https://fetch.com/assets/images/graphics/footer-logo.svg)
+<p align="center">
+  <img height="300" src="https://github.com/ktimchen/fetch-ml-exercise/assets/36734709/790ce6ac-f3e2-4259-841d-625f35825d39">
+</p>
+
 
 Given a number of months (e.g. 6), this app returns the approximate number of scanned receipts for each month after 2021 (e.g. from Jan 2022 to Jun 2022).
 
