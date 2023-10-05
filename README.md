@@ -27,7 +27,7 @@ Hence, I am forecasting on the monthly level.
 - I've decided to use a simple linear regression because:
   - Only 2021 numbers are available
   - I don't have enough domain knowledge/data to make assumptions, e.g. what does the 2020 data look like? Are August numbers always higher than June numbers? Is there a monthly seasonality?    
-- There is a slight dip in February 2021 - but we don't have enough data to make a judgment. Did the same happen in 2020? Is this an outlier? Was the app broken in that month?
+- There is a slight dip in February 2021 - but we don't have enough data to make a judgment. Did the same happen in 2020? Is this an outlier? Was the app broken in February?
 - The MAPE (mean absolute percentage error) on the test set of the last three months is ~1% which is fantastic! Real world data is rarely this predictable.
 To compute MAPE, run 
     ```
